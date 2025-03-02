@@ -16,6 +16,7 @@
     --color-input-border:#d1d1d1;
 
     --form-input-radius: 8px;
+    --color-footer: #28272c;
 }
 
 
@@ -357,6 +358,73 @@ body{
 
 .form-checkbox{
     appearance: none;
-    
+    }
 
+/* ---- footer ---*/
+
+.footer{
+    background: var(--color-footer);
+    height: 232px;
+
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text{
+    display: flex;
+    gap: 140px;
+}
+
+.footer__text-left,
+.footer__text-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    gap: 7px;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    font-family: var(--font-special);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: white;
+}
+
+.footer__logo span{
+    color: var(--color-primary);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.footer__text--link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-special);
+    font-family: 14px;
+    line-height: 19px;
+
+}
+.footer__text--home-page{
+    color: var(--color-primary);
+}
+
+.footer__bottom--copyright{
+    color: #d1d1d1;
+    font-size: 12px;
+    font-family: var(--font-special);
+
+}
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
 }
